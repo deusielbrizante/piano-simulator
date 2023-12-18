@@ -2,7 +2,7 @@
 let mapedKeys = []
 
 //variável de inicialização do áudio
-let audio = new Audio("src/tunes/a.wav")
+let audio = new Audio("./src/tunes/a.wav")
 
 //variável de verificação para ver se as teclas podem exibir as letras ou não
 const keysCheck = document.querySelector(".keys-check input")
@@ -16,7 +16,7 @@ const volumeSlider = document.querySelector(".volume-slider input")
 //função para executar o áudio da tecla pressionada
 const playTune = (key) => {
     //atualiza para o áudio que foi pressionado e ativa o som dele
-    audio.src = `src/tunes/${key}.wav`
+    audio.src = `./src/tunes/${key}.wav`
     audio.play()
 
     //variável local para verificar qual tecla foi clicada
